@@ -18,3 +18,12 @@ test("Gets total score of baseball board: '5 -2 4 C D 9 + +' to equal 27 😊", 
 	expect(getTotalScore("5 -2 4 C D 9 + +")).toBe(27);
 });
 
+/**
+ * Test Case 3
+ * input = "1"
+ * expected value = 1
+ */
+test("Gets total score of baseball board: '1' to equal 1 😊", () => {
+	expect(getTotalScore("1")).toBe(1);
+});
+
