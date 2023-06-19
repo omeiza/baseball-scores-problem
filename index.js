@@ -13,7 +13,7 @@
  * Return the sum of all the scores on the record.
  */
 
-function getTotalScore(ops) {
+const getTotalScore = (ops) => {
 	let result = 0;
 	const split = ops.split(" ");
 
@@ -30,7 +30,7 @@ function getTotalScore(ops) {
 		}
 
 		if (cache.length > 0) {
-			result = cache.reduce(function(accumulator, a) {
+			result = cache.reduce((accumulator, a) => {
 				return accumulator + a;
 			}, 0);
 		}
@@ -39,4 +39,4 @@ function getTotalScore(ops) {
 	return result;
 }
 
-console.log(getTotalScore("5 2 C D +"));
+export default getTotalScore;

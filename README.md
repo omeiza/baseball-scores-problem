@@ -11,3 +11,6 @@ operation you must apply to the record and is one of the following:
 4. `"C"` - Invalidate the previous score, removing it from the record. It is guaranteed there will be a previous score.
 
 Return the sum of all the scores on the record.
+
+## Get this working
+Check the test cases and run `npm test` 😊
