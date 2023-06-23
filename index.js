@@ -13,7 +13,7 @@
  * Return the sum of all the scores on the record.
  */
 
-const getTotalScore = (ops) => {
+export default function getTotalScore (ops) {
 	let result = 0;
 	const split = ops.split(" ");
 
@@ -38,5 +38,3 @@ const getTotalScore = (ops) => {
 
 	return result;
 }
-
-export default getTotalScore;
